@@ -19,6 +19,7 @@
   
   <!-- theme meta -->
   <meta name="theme-name" content="dtox" />
+  <base href="@@base">
   
   <!-- ** Plugins Needed for the Project ** -->
   <!-- Bootstrap -->
@@ -44,46 +45,74 @@
 <body>
   
 
-<!-- navigation -->
-<section class="fixed-top navigation">
+
+<header class="navigation fixed-top">
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
-      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- navbar -->
-      <div class="collapse navbar-collapse text-center" id="navbar">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#feature">Feature</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="service.html">Service</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#team">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#pricing">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-        <a href="#" class="btn btn-primary ml-lg-3 primary-shadow">Try Free</a>
-      </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-light">
+	<div data-v-component-site>	
+		<a class="navbar-brand font-tertiary h3" href="/" data-v-url-params='{"host":"www.*.*"}'>
+		   <img src="images/logo.png" loading="lazy" class="logo-default" data-v-site-logo>
+		   <img src="images/logo.png" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
+		   <img src="images/logo.png" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+		   <img src="images/logo.png" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
+		</a>
+	</div>    
+    
+    
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+	<div class="collapse navbar-collapse  text-center" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
+		<ul class="navbar-nav ms-auto" data-v-menu-items>
+		  <li class="nav-item dropdown" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0">
+			
+			<a class="nav-link" href="https://themes.vvveb.com" data-v-if="category.children <= 0"  data-v-menu-item-url><span data-v-menu-item-name>Services</span></a>
+
+			<a class="nav-link dropdown-toggle" href="#" data-v-if="category.children > 0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-v-menu-item-url><span data-v-menu-item-name>Resources</span></a>
+			
+			<div class="dropdown-menu" data-v-menu-item-recursive>
+			  <div data-v-menu-item class="nav-item" data-v-menu-item data-v-class-if-dropdown="category.children > 0">
+				<a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url><span data-v-menu-item-name>User Documentation</span></a>
+			  </div> 
+			  <div data-v-menu-item class="nav-item" data-v-menu-item data-v-class-if-dropdown="category.children > 0">
+				<a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url><span data-v-menu-item-name>Developer Documentation</span></a>
+			  </div> 
+			</div>
+		  </li>
+		  <li class="nav-item" data-v-menu-item>
+			<a class="nav-link" href="https://blog.vvveb.com"  data-v-menu-item-url><span data-v-menu-item-name>Blog</span></a>
+		  </li>
+		  <li class="nav-item" data-v-menu-item>
+			<a class="nav-link" href="https://www.vvveb.com/page/contact"  data-v-menu-item-url><span data-v-menu-item-name>Contact</span></a>
+		  </li>
+		  <li class="nav-item" data-v-menu-item>
+			<a class="nav-link" href="https://www.vvveb.com"  data-v-menu-item-url><span data-v-menu-item-name>About us</span></a>
+		  </li>
+		</ul>
+
+		<div class="search-area toggle-hover">
+			<form action="/search" method="get" data-v-action="/search">
+				<input type="hidden" name="route" value="search">
+				<div class="input-group">
+					<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
+					<button class="btn border-0" type="submit">
+						<div class="ti-flip-horizontal">
+							<i class="ti-search la-lg" aria-hidden="true"></i>
+						</div>
+					</button>
+				</div>			  
+			</form>
+		</div>
+
+		 <a href="#" class="btn btn-primary ms-lg-3 primary-shadow">Try Free</a>
+		
+	</div>
+  </nav>
   </div>
-</section>
-<!-- /navigation -->
+</header>
+
 
 <!-- hero area -->
 <section class="hero-section hero" data-background="" style="background-image: url(images/hero-area/banner-bg.png);">
@@ -127,7 +156,7 @@
       <div class="col-md-6 mb-80">
         <div class="d-flex feature-item">
           <div>
-            <i class="ti-ruler-pencil feature-icon mr-4"></i>
+            <i class="ti-ruler-pencil feature-icon me-4"></i>
           </div>
           <div>
             <h4>Awesome Design</h4>
@@ -140,7 +169,7 @@
       <div class="col-md-6 mb-80">
         <div class="d-flex feature-item">
           <div>
-            <i class="ti-layout-cta-left feature-icon mr-4"></i>
+            <i class="ti-layout-cta-left feature-icon me-4"></i>
           </div>
           <div>
             <h4>Easy Customize</h4>
@@ -153,7 +182,7 @@
       <div class="col-md-6 mb-80">
         <div class="d-flex feature-item">
           <div>
-            <i class="ti-split-v-alt feature-icon mr-4"></i>
+            <i class="ti-split-v-alt feature-icon me-4"></i>
           </div>
           <div>
             <h4>Bug free Code</h4>
@@ -166,7 +195,7 @@
       <div class="col-md-6 mb-80">
         <div class="d-flex feature-item">
           <div>
-            <i class="ti-layers-alt feature-icon mr-4"></i>
+            <i class="ti-layers-alt feature-icon me-4"></i>
           </div>
           <div>
             <h4>Organized Layouts</h4>
@@ -256,7 +285,7 @@
         <!-- team-member -->
         <div class="team-member">
           <div class="d-flex mb-4">
-            <div class="mr-3">
+            <div class="me-3">
               <img class="rounded-circle img-fluid" src="images/team/team-1.jpg" alt="team-member">
             </div>
             <div class="align-self-center">
@@ -269,7 +298,7 @@
         <!-- team-member -->
         <div class="team-member">
           <div class="d-flex mb-4">
-            <div class="mr-3">
+            <div class="me-3">
               <img class="rounded-circle img-fluid" src="images/team/team-2.jpg" alt="team-member">
             </div>
             <div class="align-self-center">
@@ -282,7 +311,7 @@
         <!-- team-member -->
         <div class="team-member">
           <div class="d-flex mb-4">
-            <div class="mr-3">
+            <div class="me-3">
               <img class="rounded-circle img-fluid" src="images/team/team-3.jpg" alt="team-member">
             </div>
             <div class="align-self-center">
@@ -296,7 +325,7 @@
         <!-- team-member -->
         <div class="team-member">
           <div class="d-flex mb-4">
-            <div class="mr-3">
+            <div class="me-3">
               <img class="rounded-circle img-fluid" src="images/team/team-1.jpg" alt="team-member">
             </div>
             <div class="align-self-center">
@@ -310,7 +339,7 @@
         <!-- team-member -->
         <div class="team-member">
           <div class="d-flex mb-4">
-            <div class="mr-3">
+            <div class="me-3">
               <img class="rounded-circle img-fluid" src="images/team/team-2.jpg" alt="team-member">
             </div>
             <div class="align-self-center">
@@ -412,19 +441,94 @@
 
 <!-- newsletter -->
 <section class="newsletter">
-  <div class="container">
+  <div class="container" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="newsletter">
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2>Subscribe to our newsletter</h2>
         <p class="mb-5">Receive updates, news and deals</p>
       </div>
       <div class="col-lg-8 col-sm-10 col-12 mx-auto">
-        <form action="#">
+
+	<div class="notifications" data-v-notifications>
+
+	<div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error >
+
+		<div class="align-middle me-2">
+			<i class="align-middle ti-announcement"></i>
+		</div>
+
+		<div class="flex-grow-1 align-self-center text-small" >
+			<div>
+				<div data-v-notification-text>
+					This is a placeholder for a notification message.
+				</div>
+			</div>
+		</div>
+
+
+		<button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">
+				<!-- <i class="la ti-times"></i> -->
+			</span>
+		</button>
+	</div>
+
+	<div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success >
+
+		<div class="align-middle me-2">
+			<i class="align-middle ti-check"></i>
+		</div>
+
+		<div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
+			This is a placeholder for a success message.
+		</div>
+
+		<button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">
+				<!-- <i class="la ti-times"></i> -->
+			</span>
+		</button>
+	</div>
+	
+	<div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info >
+
+		<div class="align-middle me-2">
+			<i class="align-middle ti-light-bulb"></i>
+		</div>
+
+		<div class="flex-grow-1 align-self-center" data-v-notification-text>
+			This is a placeholder for a info message.
+		</div>
+
+		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">
+				<!-- <i class="la ti-times"></i> -->
+			</span>
+		</button>
+	</div>
+
+</div>
+
+
+	<form action="" method="post">
+	  <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
+
           <div class="input-wrapper position-relative">
-            <input type="email" class="newsletter-form" id="newsletter" placeholder="Enter your email">
+            <input type="email" name="email" class="newsletter-form" id="newsletter" placeholder="Enter your email">
             <button type="submit" value="send" class="btn newsletter-btn">subscribe</button>
           </div>
-        </form>
+
+  
+	 <!-- if these hidden inputs are filled then ignore, robots -->
+
+	 <input type="text" class="form-control d-none" placeholder="Contact form" name="contact-form" >	
+	 
+	 <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty" >	
+	 
+	 <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">
+
+	</form>	 
+
       </div>
     </div>
   </div>
@@ -433,30 +537,65 @@
 </section>
 <!-- /newsletter -->
 
+
 <!-- footer -->
 <footer class="footer-section footer" style="background-image: url(images/backgrounds/footer-bg.png);">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
-        <!-- logo -->
-        <a href="index.html">
-          <img class="img-fluid" src="images/logo.png" alt="logo">
-        </a>
-      </div>
-      <!-- footer menu -->
-      <nav class="col-lg-8 align-self-center mb-5">
-        <ul class="list-inline text-lg-right text-center footer-menu">
-          <li class="list-inline-item active"><a href="index.html">Home</a></li>
-          <li class="list-inline-item"><a class="page-scroll" href="#feature">Feature</a></li>
-          <li class="list-inline-item"><a href="about.html">About</a></li>
-          <li class="list-inline-item"><a class="page-scroll" href="#team">Team</a></li>
-          <li class="list-inline-item"><a class="page-scroll" href="#pricing">Pricing</a></li>
-          <li class="list-inline-item"><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+  <div class="container" data-v-component-menu="footer" data-v-menu_id="5">
+
+	<div class="row footer-menu" data-v-menu-items>
+		
+		<div class="col-md-3">
+
+			<div data-v-component-site>	
+			   <img src="img/logo-white.png" class="logo-default-dark" data-v-site-logo-dark>
+			   <img src="img/logo.png" class="logo-default" data-v-site-logo>
+			</div>
+
+		</div>
+		
+		
+		<div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+				<h6 data-v-menu-item-name>Vvveb</h6>
+				<nav data-v-menu-item-recursive>
+					<div data-v-menu-item data-v-if="category.children == 0">
+						<a href="https://themes.vvveb.com/" data-v-menu-item-url><span data-v-menu-item-name>Themes</span></a>
+					</div>
+					<div data-v-menu-item data-v-if="category.children == 0">
+						<a href="https://plugins.vvveb.com/" data-v-menu-item-url><span data-v-menu-item-name>Plugins</span></a>
+					</div>
+				</nav>
+		</div>
+		
+		<div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+				<h6 data-v-menu-item-name>Resources</h6>
+				<nav data-v-menu-item-recursive>
+					<div data-v-menu-item data-v-if="category.children == 0">
+						<a href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url><span data-v-menu-item-name>User documentation</span></a>
+					</div>
+					<div data-v-menu-item data-v-if="category.children == 0">
+						<a href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url><span data-v-menu-item-name>Developer documentation</span></a>
+					</div>
+				</nav>
+		</div>
+
+		<div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+				<h6 data-v-menu-item-name>Contact</h6>
+				<nav data-v-menu-item-recursive>
+					<div data-v-menu-item data-v-if="category.children == 0">
+						<a href="" src="contact.html">Contact</a>
+					</div>
+				</nav>
+		</div>
+		
+
+		
+	</div>
+
+
+
       <!-- footer social icon -->
-      <nav class="col-12">
-        <ul class="list-inline text-lg-right text-center social-icon">
+      <nav class="col-12 mt-4">
+        <ul class="list-inline text-center social-icon">
           <li class="list-inline-item">
             <a class="facebook" href="#"><i class="ti-facebook"></i></a>
           </li>
@@ -475,6 +614,7 @@
   </div>
 </footer>
 <!-- /footer -->
+
 
 <!-- jQuery -->
 <script src="plugins/jQuery/jquery.min.js"></script>

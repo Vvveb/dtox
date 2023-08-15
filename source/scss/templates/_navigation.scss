@@ -24,7 +24,7 @@
   }
 }
 
-.nav-item {
+.navbar-nav > .nav-item {
   padding: 20px 10px;
   @include desktop {
     padding: 0;

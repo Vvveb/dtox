@@ -11,14 +11,14 @@ body {
 
 p, .paragraph {
   font-weight: 300;
-  color: $text-color;
+  //color: $text-color;
   font-size: 17px;
   line-height: 31px;
   font-family: $primary-font;
 }
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
-  color: $text-color-dark;
+  //color: $text-color-dark;
   font-family: $primary-font;
   font-weight: 600;
   line-height: 1.5;

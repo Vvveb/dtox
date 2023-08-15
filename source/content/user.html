@@ -1,0 +1,134 @@
+@@include('header.htm', {'base':'../'})
+
+@@include('blocks/navigation.htm')
+
+<!-- blog -->
+<section class="section section-lg about pb-0">
+  <div class="container" data-v-component-posts="posts-1" data-v-limit="6" data-v-user="url" data-v-image_size="medium">
+    <div class="row">
+        <div class="col-lg-4 col-sm-6 mb-4" data-v-post>
+          <article class="card">
+            <img class="rounded card-img-top" src="images/blog/post-5.jpg" alt="post-thumb" loading="lazy" data-v-size="thumb" data-v-post-image>
+			  <div class="card-body">
+				<a class="text-dark" href="blog-single.html" data-v-post-url><h4 class="card-title" data-v-post-name>Amazon increase income 1.5 Million</h4></a>
+				<p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+				  incididunt ut labore et
+				  dolore magna aliqua.</p>
+				 <a href="blog-single.html" class="btn btn-xs btn-primary" data-v-post-url><span>Read More</span></a>
+			  </div>
+          </article>
+        </div>
+      <div class="col-lg-4 col-sm-6 mb-4" data-v-post>
+        <article class="card">
+          <img class="rounded card-img-top" src="images/blog/post-2.jpg" alt="post-thumb" loading="lazy" data-v-size="thumb" data-v-post-image>
+			  <div class="card-body">
+				<a class="text-dark" href="blog-single.html" data-v-post-url><h4 class="card-title" data-v-post-name>Amazon increase income 1.5 Million</h4></a>
+				<p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+				  incididunt ut labore et
+				  dolore magna aliqua.</p>
+				 <a href="blog-single.html" class="btn btn-xs btn-primary" data-v-post-url><span>Read More</span></a>
+			  </div>
+
+        </article>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4" data-v-post>
+        <article class="card">
+          <img class="rounded card-img-top" src="images/blog/post-3.jpg" alt="post-thumb" loading="lazy" data-v-size="thumb" data-v-post-image>
+			  <div class="card-body">
+				<a class="text-dark" href="blog-single.html" data-v-post-url><h4 class="card-title" data-v-post-name>Amazon increase income 1.5 Million</h4></a>
+				<p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+				  incididunt ut labore et
+				  dolore magna aliqua.</p>
+				 <a href="blog-single.html" class="btn btn-xs btn-primary" data-v-post-url><span>Read More</span></a>
+			  </div>
+
+        </article>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4" data-v-post>
+        <article class="card">
+          <img class="rounded card-img-top" src="images/blog/post-4.jpg" alt="post-thumb" loading="lazy" data-v-size="thumb" data-v-post-image>
+			  <div class="card-body">
+				<a class="text-dark" href="blog-single.html" data-v-post-url><h4 class="card-title" data-v-post-name>Amazon increase income 1.5 Million</h4></a>
+				<p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+				  incididunt ut labore et
+				  dolore magna aliqua.</p>
+				 <a href="blog-single.html" class="btn btn-xs btn-primary" data-v-post-url><span>Read More</span></a>
+			  </div>
+
+        </article>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4" data-v-post>
+        <article class="card">
+          <img class="rounded card-img-top" src="images/blog/post-5.jpg" alt="post-thumb" loading="lazy" data-v-size="thumb" data-v-post-image>
+			  <div class="card-body">
+				<a class="text-dark" href="blog-single.html" data-v-post-url><h4 class="card-title" data-v-post-name>Amazon increase income 1.5 Million</h4></a>
+				<p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+				  incididunt ut labore et
+				  dolore magna aliqua.</p>
+				 <a href="blog-single.html" class="btn btn-xs btn-primary" data-v-post-url><span>Read More</span></a>
+			  </div>
+
+        </article>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4" data-v-post>
+        <article class="card">
+          <img class="rounded card-img-top" src="images/blog/post-2.jpg" alt="post-thumb" loading="lazy" data-v-size="thumb" data-v-post-image>
+			  <div class="card-body">
+				<a class="text-dark" href="blog-single.html" data-v-post-url><h4 class="card-title" data-v-post-name>Amazon increase income 1.5 Million</h4></a>
+				<p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+				  incididunt ut labore et
+				  dolore magna aliqua.</p>
+				 <a href="blog-single.html" class="btn btn-xs btn-primary" data-v-post-url><span>Read More</span></a>
+			  </div>
+
+        </article>
+      </div>
+    </div>
+    
+    @@include('pagination.html', {"component": "posts", "component-index":0})
+    
+  </div>
+</section>
+<!-- /blog -->
+
+<!-- clients -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">My Clients</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="client-logo-slider d-flex align-items-center">
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="images/clients-logo/client-logo-1.png" alt="client-logo"></a>
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="images/clients-logo/client-logo-2.png" alt="client-logo"></a>
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="images/clients-logo/client-logo-3.png" alt="client-logo"></a>
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="images/clients-logo/client-logo-4.png" alt="client-logo"></a>
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="images/clients-logo/client-logo-5.png" alt="client-logo"></a>
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="images/clients-logo/client-logo-1.png" alt="client-logo"></a>
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="images/clients-logo/client-logo-2.png" alt="client-logo"></a>
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="images/clients-logo/client-logo-3.png" alt="client-logo"></a>
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="images/clients-logo/client-logo-4.png" alt="client-logo"></a>
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="images/clients-logo/client-logo-5.png" alt="client-logo"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /clients -->
+
+@@include('blocks/footer.htm')
+
+@@include('footer.htm')

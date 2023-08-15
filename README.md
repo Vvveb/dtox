@@ -1,13 +1,19 @@
-# Dtox Free Bootstrap SAAS Template
+# Dtox Free Bootstrap 5 Template and Vvveb CMS theme
 
 ![dtox](https://demo.themefisher.com/thumbnails/dtox.png)
 
 👉🏻[View Live Preview](https://demo.themefisher.com/dtox/)
 
+## [Vvveb CMS](https://www.vvveb.com) theme.
+
+👉🏻 [Theme page](https://themes.vvveb.com/product/dtox) 
+👉🏻 [Theme development documentation](http://dev.vvveb.com/theme-introduction)
+
+Use this template either as a standalone Bootstrap 5 template or as a Vvveb CMS theme.
 <!-- download -->
 ## Download And installation
 
-Download this template from [Github](https://github.com/themefisher/dtox/archive/main.zip)
+Download this template from [Github](https://github.com/Vvveb/dtox/archive/main.zip)
 
 <!-- installation -->
 ### Basic Usages
@@ -62,8 +68,8 @@ Now you get a `theme` folder that has all the changes you have made. you can use
 <!-- reporting issue -->
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for the dtox Template. Please Search [existing issues](https://github.com/themefisher/dtox/issues). It’s possible someone has already reported the same problem.
-If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/themefisher/dtox/issues).
+We use GitHub Issues as the official bug tracker for the dtox Template. Please Search [existing issues](https://github.com/Vvveb/dtox/issues). It’s possible someone has already reported the same problem.
+If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/Vvveb/dtox/issues).
 
 <!-- support -->
 ## Technical Support or Questions (Paid)
@@ -75,6 +81,8 @@ If you have questions or need help integrating the product please [contact us](m
 
 Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
 
-**Code License:** Released under the [MIT](https://github.com/themefisher/dtox/blob/main/LICENSE) license.
+**Code License:** Released under the [MIT](https://github.com/Vvveb/dtox/blob/main/LICENSE) license.
 
 **Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
+
+**Vvveb CMS integration** Changes released under the MIT license.

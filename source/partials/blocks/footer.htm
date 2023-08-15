@@ -1,27 +1,61 @@
 <!-- footer -->
 <footer class="footer-section footer" style="background-image: url(images/backgrounds/footer-bg.png);">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
-        <!-- logo -->
-        <a href="index.html">
-          <img class="img-fluid" src="images/logo.png" alt="logo">
-        </a>
-      </div>
-      <!-- footer menu -->
-      <nav class="col-lg-8 align-self-center mb-5">
-        <ul class="list-inline text-lg-right text-center footer-menu">
-          <li class="list-inline-item active"><a href="index.html">Home</a></li>
-          <li class="list-inline-item"><a class="page-scroll" href="#feature">Feature</a></li>
-          <li class="list-inline-item"><a href="about.html">About</a></li>
-          <li class="list-inline-item"><a class="page-scroll" href="#team">Team</a></li>
-          <li class="list-inline-item"><a class="page-scroll" href="#pricing">Pricing</a></li>
-          <li class="list-inline-item"><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+  <div class="container" data-v-component-menu="footer" data-v-menu_id="5">
+
+	<div class="row footer-menu" data-v-menu-items>
+		
+		<div class="col-md-3">
+
+			<div data-v-component-site>	
+			   <img src="img/logo-white.png" class="logo-default-dark" data-v-site-logo-dark>
+			   <img src="img/logo.png" class="logo-default" data-v-site-logo>
+			</div>
+
+		</div>
+		
+		
+		<div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+				<h6 data-v-menu-item-name>Vvveb</h6>
+				<nav data-v-menu-item-recursive>
+					<div data-v-menu-item data-v-if="category.children == 0">
+						<a href="https://themes.vvveb.com/" data-v-menu-item-url><span data-v-menu-item-name>Themes</span></a>
+					</div>
+					<div data-v-menu-item data-v-if="category.children == 0">
+						<a href="https://plugins.vvveb.com/" data-v-menu-item-url><span data-v-menu-item-name>Plugins</span></a>
+					</div>
+				</nav>
+		</div>
+		
+		<div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+				<h6 data-v-menu-item-name>Resources</h6>
+				<nav data-v-menu-item-recursive>
+					<div data-v-menu-item data-v-if="category.children == 0">
+						<a href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url><span data-v-menu-item-name>User documentation</span></a>
+					</div>
+					<div data-v-menu-item data-v-if="category.children == 0">
+						<a href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url><span data-v-menu-item-name>Developer documentation</span></a>
+					</div>
+				</nav>
+		</div>
+
+		<div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+				<h6 data-v-menu-item-name>Contact</h6>
+				<nav data-v-menu-item-recursive>
+					<div data-v-menu-item data-v-if="category.children == 0">
+						<a href="" src="contact.html">Contact</a>
+					</div>
+				</nav>
+		</div>
+		
+
+		
+	</div>
+
+
+
       <!-- footer social icon -->
-      <nav class="col-12">
-        <ul class="list-inline text-lg-right text-center social-icon">
+      <nav class="col-12 mt-4">
+        <ul class="list-inline text-center social-icon">
           <li class="list-inline-item">
             <a class="facebook" href="#"><i class="ti-facebook"></i></a>
           </li>

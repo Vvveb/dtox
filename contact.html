@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dtox</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="dtox" />
+  <base href="@@base">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/Venobox/venobox.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  
+
+
+<header class="navigation fixed-top">
+  <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light">
+	<div data-v-component-site>	
+		<a class="navbar-brand font-tertiary h3" href="/" data-v-url-params='{"host":"www.*.*"}'>
+		   <img src="images/logo.png" loading="lazy" class="logo-default" data-v-site-logo>
+		   <img src="images/logo.png" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
+		   <img src="images/logo.png" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+		   <img src="images/logo.png" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
+		</a>
+	</div>    
+    
+    
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+	<div class="collapse navbar-collapse  text-center" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
+		<ul class="navbar-nav ms-auto" data-v-menu-items>
+		  <li class="nav-item dropdown" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0">
+			
+			<a class="nav-link" href="https://themes.vvveb.com" data-v-if="category.children <= 0"  data-v-menu-item-url><span data-v-menu-item-name>Services</span></a>
+
+			<a class="nav-link dropdown-toggle" href="#" data-v-if="category.children > 0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-v-menu-item-url><span data-v-menu-item-name>Resources</span></a>
+			
+			<div class="dropdown-menu" data-v-menu-item-recursive>
+			  <div data-v-menu-item class="nav-item" data-v-menu-item data-v-class-if-dropdown="category.children > 0">
+				<a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url><span data-v-menu-item-name>User Documentation</span></a>
+			  </div> 
+			  <div data-v-menu-item class="nav-item" data-v-menu-item data-v-class-if-dropdown="category.children > 0">
+				<a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url><span data-v-menu-item-name>Developer Documentation</span></a>
+			  </div> 
+			</div>
+		  </li>
+		  <li class="nav-item" data-v-menu-item>
+			<a class="nav-link" href="https://blog.vvveb.com"  data-v-menu-item-url><span data-v-menu-item-name>Blog</span></a>
+		  </li>
+		  <li class="nav-item" data-v-menu-item>
+			<a class="nav-link" href="https://www.vvveb.com/page/contact"  data-v-menu-item-url><span data-v-menu-item-name>Contact</span></a>
+		  </li>
+		  <li class="nav-item" data-v-menu-item>
+			<a class="nav-link" href="https://www.vvveb.com"  data-v-menu-item-url><span data-v-menu-item-name>About us</span></a>
+		  </li>
+		</ul>
+
+		<div class="search-area toggle-hover">
+			<form action="/search" method="get" data-v-action="/search">
+				<input type="hidden" name="route" value="search">
+				<div class="input-group">
+					<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
+					<button class="btn border-0" type="submit">
+						<div class="ti-flip-horizontal">
+							<i class="ti-search la-lg" aria-hidden="true"></i>
+						</div>
+					</button>
+				</div>			  
+			</form>
+		</div>
+
+		 <a href="#" class="btn btn-primary ms-lg-3 primary-shadow">Try Free</a>
+		
+	</div>
+  </nav>
+  </div>
+</header>
+
+
+<!-- contact -->
+<section class="section-lg contact">
+  <div class="container" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-us-home">
+	  
+
+	<form action="" method="post">
+	  <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-title">Contact</h2>
+            </div>
+        </div>
+        <div class="row contact-bg p-5 rounded mb-5">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+
+		<div class="notifications" data-v-notifications>
+
+	<div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error >
+
+		<div class="align-middle me-2">
+			<i class="align-middle ti-announcement"></i>
+		</div>
+
+		<div class="flex-grow-1 align-self-center text-small" >
+			<div>
+				<div data-v-notification-text>
+					This is a placeholder for a notification message.
+				</div>
+			</div>
+		</div>
+
+
+		<button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">
+				<!-- <i class="la ti-times"></i> -->
+			</span>
+		</button>
+	</div>
+
+	<div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success >
+
+		<div class="align-middle me-2">
+			<i class="align-middle ti-check"></i>
+		</div>
+
+		<div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
+			This is a placeholder for a success message.
+		</div>
+
+		<button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">
+				<!-- <i class="la ti-times"></i> -->
+			</span>
+		</button>
+	</div>
+	
+	<div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info >
+
+		<div class="align-middle me-2">
+			<i class="align-middle ti-light-bulb"></i>
+		</div>
+
+		<div class="flex-grow-1 align-self-center" data-v-notification-text>
+			This is a placeholder for a info message.
+		</div>
+
+		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">
+				<!-- <i class="la ti-times"></i> -->
+			</span>
+		</button>
+	</div>
+
+</div>
+
+
+                    <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Your Name">
+                    <input type="email" class="form-control mb-3" id="mail" name="email" placeholder="Your Email">
+                    <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Subject">
+                    <textarea name="message" id="message" class="form-control mb-3" placeholder="Your Message"></textarea>
+                    <button type="submit" value="send" class="btn btn-secondary">SEND MESSAGE</button>
+
+            </div>
+            <div class="col-lg-5">
+                <p class="mb-5">If you'll like to know more about our experience designing and delivering cloud solutions, or get advice on your own technology challenges get in touch. With dedicated engineers on-hand 24/7,      we’re set up to become an extension of your team.</p>
+                <a href="tel:+442081446356" class="text-color h5 d-block">+44 20 8144 6356</a>
+                <a href="mailto:info@altostack.io" class="mb-5 text-color h5 d-block">info@altostack.io</a>
+                <p>71 Shelton Street<br>London WC2H 9JQ England</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                <div class="card p-4 border-blue">
+                    <h5><i class="ti-layers-alt round-icon blue me-2"></i> Sales</h5>
+                    <p class="mb-0">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                <div class="card p-4 border-blue">
+                    <h5><i class="ti-desktop round-icon green me-2"></i> Help & Support</h5>
+                    <p class="mb-0">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                <div class="card p-4 border-blue">
+                    <h5><i class="ti-panel round-icon orange me-2"></i> Legal Departments</h5>
+                    <p class="mb-0">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                </div>
+            </div>
+        </div>
+
+	 <!-- if these hidden inputs are filled then ignore, robots -->
+
+	 <input type="text" class="form-control d-none" placeholder="Contact form" name="contact-form" >	
+	 
+	 <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty" >	
+	 
+	 <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">
+
+	</form>	 
+    </div>
+    <!-- background shapes -->
+    <img class="contact-bg-1 up-down-animation" src="images/background-shape/feature-bg-2.png" alt="background-shape">
+    <img class="contact-bg-2 left-right-animation" src="images/background-shape/green-half-cycle.png" alt="background-shape">
+    <img class="contact-bg-3 up-down-animation" src="images/background-shape/green-dot.png" alt="background-shape">
+    <img class="contact-bg-4 left-right-animation" src="images/background-shape/service-half-cycle.png" alt="background-shape">
+    <img class="contact-bg-5 up-down-animation" src="images/background-shape/feature-bg-2.png" alt="background-shape">
+</section>
+<!-- /contact -->
+
+
+<!-- footer -->
+<footer class="footer-section footer" style="background-image: url(images/backgrounds/footer-bg.png);">
+  <div class="container" data-v-component-menu="footer" data-v-menu_id="5">
+
+	<div class="row footer-menu" data-v-menu-items>
+		
+		<div class="col-md-3">
+
+			<div data-v-component-site>	
+			   <img src="img/logo-white.png" class="logo-default-dark" data-v-site-logo-dark>
+			   <img src="img/logo.png" class="logo-default" data-v-site-logo>
+			</div>
+
+		</div>
+		
+		
+		<div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+				<h6 data-v-menu-item-name>Vvveb</h6>
+				<nav data-v-menu-item-recursive>
+					<div data-v-menu-item data-v-if="category.children == 0">
+						<a href="https://themes.vvveb.com/" data-v-menu-item-url><span data-v-menu-item-name>Themes</span></a>
+					</div>
+					<div data-v-menu-item data-v-if="category.children == 0">
+						<a href="https://plugins.vvveb.com/" data-v-menu-item-url><span data-v-menu-item-name>Plugins</span></a>
+					</div>
+				</nav>
+		</div>
+		
+		<div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+				<h6 data-v-menu-item-name>Resources</h6>
+				<nav data-v-menu-item-recursive>
+					<div data-v-menu-item data-v-if="category.children == 0">
+						<a href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url><span data-v-menu-item-name>User documentation</span></a>
+					</div>
+					<div data-v-menu-item data-v-if="category.children == 0">
+						<a href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url><span data-v-menu-item-name>Developer documentation</span></a>
+					</div>
+				</nav>
+		</div>
+
+		<div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+				<h6 data-v-menu-item-name>Contact</h6>
+				<nav data-v-menu-item-recursive>
+					<div data-v-menu-item data-v-if="category.children == 0">
+						<a href="" src="contact.html">Contact</a>
+					</div>
+				</nav>
+		</div>
+		
+
+		
+	</div>
+
+
+
+      <!-- footer social icon -->
+      <nav class="col-12 mt-4">
+        <ul class="list-inline text-center social-icon">
+          <li class="list-inline-item">
+            <a class="facebook" href="#"><i class="ti-facebook"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="twitter" href="#"><i class="ti-twitter-alt"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="linkedin" href="#"><i class="ti-linkedin"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="black" href="#"><i class="ti-github"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- venobox -->
+<script src="plugins/Venobox/venobox.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

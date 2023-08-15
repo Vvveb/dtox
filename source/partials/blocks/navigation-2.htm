@@ -1,40 +1,66 @@
-<!-- navigation -->
-<section class="fixed-top navigation">
+<header class="navigation fixed-top">
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
-      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- navbar -->
-      <div class="collapse navbar-collapse text-center" id="navbar">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="index.html#feature">Feature</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="service.html">Service</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="index.html#team">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="index.html#pricing">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-        <a href="#" class="btn btn-primary ml-lg-3 primary-shadow">Try Free</a>
-      </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-light">
+	<div data-v-component-site>	
+		<a class="navbar-brand font-tertiary h3" href="/" data-v-url-params='{"host":"www.*.*"}'>
+		   <img src="images/logo.png" loading="lazy" class="logo-default" data-v-site-logo>
+		   <img src="images/logo.png" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
+		   <img src="images/logo.png" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+		   <img src="images/logo.png" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
+		</a>
+	</div>    
+    
+    
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+	<div class="collapse navbar-collapse  text-center" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
+		<ul class="navbar-nav ms-auto" data-v-menu-items>
+		  <li class="nav-item dropdown" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0">
+			
+			<a class="nav-link" href="https://themes.vvveb.com" data-v-if="category.children <= 0"  data-v-menu-item-url><span data-v-menu-item-name>Services</span></a>
+
+			<a class="nav-link dropdown-toggle" href="#" data-v-if="category.children > 0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-v-menu-item-url><span data-v-menu-item-name>Resources</span></a>
+			
+			<div class="dropdown-menu" data-v-menu-item-recursive>
+			  <div data-v-menu-item class="nav-item" data-v-menu-item data-v-class-if-dropdown="category.children > 0">
+				<a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url><span data-v-menu-item-name>User Documentation</span></a>
+			  </div> 
+			  <div data-v-menu-item class="nav-item" data-v-menu-item data-v-class-if-dropdown="category.children > 0">
+				<a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url><span data-v-menu-item-name>Developer Documentation</span></a>
+			  </div> 
+			</div>
+		  </li>
+		  <li class="nav-item" data-v-menu-item>
+			<a class="nav-link" href="https://blog.vvveb.com"  data-v-menu-item-url><span data-v-menu-item-name>Blog</span></a>
+		  </li>
+		  <li class="nav-item" data-v-menu-item>
+			<a class="nav-link" href="https://www.vvveb.com/page/contact"  data-v-menu-item-url><span data-v-menu-item-name>Contact</span></a>
+		  </li>
+		  <li class="nav-item" data-v-menu-item>
+			<a class="nav-link" href="https://www.vvveb.com"  data-v-menu-item-url><span data-v-menu-item-name>About us</span></a>
+		  </li>
+		</ul>
+
+		<div class="search-area toggle-hover">
+			<form action="/search" method="get" data-v-action="/search">
+				<input type="hidden" name="route" value="search">
+				<div class="input-group">
+					<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
+					<button class="btn border-0" type="submit">
+						<div class="ti-flip-horizontal">
+							<i class="ti-search la-lg" aria-hidden="true"></i>
+						</div>
+					</button>
+				</div>			  
+			</form>
+		</div>
+
+		 <a href="#" class="btn btn-primary ms-lg-3 primary-shadow">Try Free</a>
+		
+	</div>
+  </nav>
   </div>
-</section>
-<!-- /navigation -->
+</header>

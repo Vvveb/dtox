@@ -15,6 +15,10 @@
 }
 
 .hero {
+  .container {
+	position:relative;
+  }
+
   &-bg-1 {
     position: absolute;
     left: 30px;
