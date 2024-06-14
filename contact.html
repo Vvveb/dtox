@@ -68,9 +68,9 @@
 		<ul class="navbar-nav ms-auto" data-v-menu-items>
 		  <li class="nav-item dropdown" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0">
 			
-			<a class="nav-link" href="https://themes.vvveb.com" data-v-if="category.children <= 0"  data-v-menu-item-url><span data-v-menu-item-name>Services</span></a>
-
-			<a class="nav-link dropdown-toggle" href="#" data-v-if="category.children > 0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-v-menu-item-url><span data-v-menu-item-name>Resources</span></a>
+			<a class="nav-link" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-haspopup="true" aria-expanded="false" data-v-menu-item-url>
+				<span data-v-menu-item-name>Resources</span>
+			</a>
 			
 			<div class="dropdown-menu" data-v-menu-item-recursive>
 			  <div data-v-menu-item class="nav-item" data-v-menu-item data-v-class-if-dropdown="category.children > 0">
@@ -130,7 +130,7 @@
         <div class="row contact-bg p-5 rounded mb-5">
             <div class="col-lg-7 mb-4 mb-lg-0">
 
-		<div class="notifications" data-v-notifications>
+				<div class="notifications" data-v-notifications>
 
 	<div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error >
 
@@ -191,11 +191,11 @@
 </div>
 
 
-                    <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Your Name">
-                    <input type="email" class="form-control mb-3" id="mail" name="email" placeholder="Your Email">
-                    <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Subject">
-                    <textarea name="message" id="message" class="form-control mb-3" placeholder="Your Message"></textarea>
-                    <button type="submit" value="send" class="btn btn-secondary">SEND MESSAGE</button>
+				<input type="text" class="form-control mb-3" id="name" name="name" placeholder="Your Name">
+				<input type="email" class="form-control mb-3" id="mail" name="email" placeholder="Your Email">
+				<input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Subject">
+				<textarea name="message" id="message" class="form-control mb-3" placeholder="Your Message"></textarea>
+				<button type="submit" value="send" class="btn btn-secondary">SEND MESSAGE</button>
 
             </div>
             <div class="col-lg-5">
